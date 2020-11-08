@@ -1,0 +1,18 @@
+create database bbs;
+use bbs;
+create table user(
+	userID varchar(20),
+    userPassword varchar(20),
+    userName varchar(20),
+    userGender varchar(20),
+    userEmail varchar(50),
+    primary key(userID)
+);
+
+show tables;
+
+-- 테이블 속성 확인하기
+desc user;
+
+insert into user values('test','1234','테스터','남자','test@test.com');
+commit;
