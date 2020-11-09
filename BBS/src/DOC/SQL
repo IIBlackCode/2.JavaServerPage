@@ -1,5 +1,8 @@
 create database bbs;
 use bbs;
+
+--#	테이블 생성 쿼리
+--# user테이블
 create table user(
 	userID varchar(20),
     userPassword varchar(20),
@@ -9,6 +12,17 @@ create table user(
     primary key(userID)
 );
 
+--# 게시판 테이블
+CREATE TABLE BBS (
+	bbsID INT,
+    bbsTitle varchar(50),
+    userID varchar(20),
+    bbsDate datetime,
+    bbsContent varchar(2048),
+    bbsAvailable INT,
+    primary key (bbsID)
+);
+
 show tables;
 
 -- 테이블 속성 확인하기
@@ -16,3 +30,4 @@ desc user;
 
 insert into user values('test','1234','테스터','남자','test@test.com');
 commit;
+
