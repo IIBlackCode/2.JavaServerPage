@@ -40,7 +40,6 @@
 			<%
 				if(userID == null){
 			%>
-				
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle"
@@ -52,7 +51,6 @@
 						</ul>
 					</li>
 				</ul>
-			
 			<%
 				}else{
 			%>
@@ -72,9 +70,6 @@
 			
 		</div>
 	</nav>
-	
-
-	
 	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
